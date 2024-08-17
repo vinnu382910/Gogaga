@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2caba1313b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h1 style="font-family: sans-serif; font-weight: 700;"><span style="color: #48bec2;">go</span><span style="color: #94d14d;">g</span><span style="color: #48bec2;">a</span><span style="color: #94d14d;">g</span><span style="color: #48bec2;">a</span></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <i class="fa-solid fa-user"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="navItem1" href="#wcuSection">
+                        Packages
+                    </a>
+                    <a class="nav-link" href="#exploreMenuSection" id="navItem2">Tours</a>
+                    <a class="nav-link" href="#deliveryPaymentSection" id="navItem3">Membership <i class="fa-sharp fa-regular fa-gem"></i></a>
+                    <a class="nav-link" href="#followUsSection" id="navItem4">Gift cards <i class="fa-solid fa-gift"></i></a>
+                    <button class="nav-button bg-transparent color: #000;" type="button" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner-section-bg-container d-flex justify-content-center flex-column" id="bannerSection">
+        <div class="ml-3 mr-3">
+            <h1 class="banner-heading">Discover Your Next Adventure</h1>
+            <p class="banner-caption">Unlock your path to adventure, start your journey of discovery - where every destination awaits your exploration</p>
+            <div class="bg-light p-2 pl-4 pr-4  rounded-lg">
+                <div class="d-flex mt-3">
+                    <button class="bg-dark rounded-lg" style="width: 6rem; color: #fff;">Packages</button>
+                    <p class="tour ml-3 mt-3" stye="font-size: 22px;">Tours</p>
+                </div>
+                <div class="mt-5 d-flex flex-column flex-md-row justify-content-start align-items-start align-items-md-center">
+                    <div class="custom-box">
+                        <label for="destination-input">Destination</label>
+                        <input type="text" id="destination-input" placeholder="Enter city name">
+                    </div>
+                    <div class="custom-box d-flex flex-row  align-items-center ml-3">
+                        <div class="d-flex flex-column">
+                            <label for="checkin-date">Check-In</label>
+                            <input type="date" id="checkin-date">
+                        </div>
+                        <div class="ml-2 d-flex flex-column justify-content-center align-items-center">
+                            <i class="fa-solid fa-moon"></i>
+                            <p>Night</p>
+                        </div>
+                        <div class="d-flex flex-column ml-2">
+                            <label for="checkout-date">Check-Out</label>
+                            <input type="date" id="checkout-date">
+                        </div>
+                    </div>
+                    <div class="custom-box d-flex ml-3">
+                        <label for="guests">Guests and Rooms <br> 2 adults, 0 children, 1 room</label>
+                        <select class="ml-2 border-0 shadow-none" id="guests">
+                            <option value="2 adults, 0 children, 1 room" class="">2 adults</option>
+                            <option value="2 adults, 0 children, 1 room" class="">0 children</option>
+                            <option value="2 adults, 0 children, 1 room" class=""> room</option>
+                        </select>
+                    </div>
+                    <div class="ml-2">
+                        <button type="submit" class="btn btn-dark"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="mt-3 d-flex justify-content-start align-items-center">
+                    <p class="mb-0">Star Rating</p>
+                    <div class="rating-container ml-2">
+                        <div class="rating-box bg-dark text-white">
+                            <p class="mb-0">3</p>
+                            <i class="fa-regular fa-star ms-2"></i>
+                        </div>
+                        <div class="rating-box bg-dark text-white">
+                            <p class="mb-0">3</p>
+                            <i class="fa-regular fa-star ms-2"></i>
+                        </div>
+                        <div class="rating-box bg-light text-dark" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+                            <p class="mb-0">3</p>
+                            <i class="fa-regular fa-star ms-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
